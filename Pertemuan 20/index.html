@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saya</title>
+
+    <!-- Bootstrap 5.2.3 CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    padding: 1rem 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #3498db;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://source.unsplash.com/random/1200x600') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero span {
+    color: #3498db;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+/* About */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 4rem 0;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Skills */
+.skills {
+    background: white;
+    padding: 4rem 0;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: #f4f6f8;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Experience */
+.experience {
+    padding: 4rem 0;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 2rem;
+}
+
+.experience-card {
+    background: white;
+    padding: 2rem;
+    border-left: 5px solid #3498db;
+}
+
+/* Contact */
+.contact {
+    background: #ecf0f1;
+    padding: 4rem 0;
+}
+
+.contact-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container header-content">
+        <div class="logo">Nama<span>Kamu</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <h1>Halo, Saya <span>Nama Kamu</span></h1>
+        <p>Mahasiswa | Web Learner | Individu yang tertarik pada teknologi</p>
+        <a href="#contact" class="btn">Hubungi Saya</a>
+    </div>
+</section>
+
+<!-- MAIN -->
+<main class="main-content">
+
+<!-- ABOUT -->
+<section id="about" class="about container">
+    <div class="about-text">
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya adalah mahasiswa yang sedang mempelajari pengembangan website.
+            Saya tertarik pada pembuatan tampilan web yang rapi, responsif,
+            dan mudah digunakan.
+        </p>
+        <p>
+            Website ini dibuat sebagai profil pribadi sekaligus latihan
+            penerapan HTML dan CSS dengan layout modern.
+        </p>
+    </div>
+    <div class="about-image">
+        <img src="https://via.placeholder.com/500x350" alt="Foto Profil">
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="section-title">
+            <h2>Keahlian</h2>
+            <p>Beberapa kemampuan yang sedang saya pelajari</p>
+        </div>
+
+        <div class="skill-grid">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Mampu membuat struktur website yang rapi dan terorganisir.</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Mengatur tampilan website agar menarik dan responsif.</p>
+            </div>
+            <div class="skill-card">
+                <h3>UI Dasar</h3>
+                <p>Memahami tata letak dan kenyamanan pengguna.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="experience">
+    <div class="container">
+        <div class="section-title">
+            <h2>Pengalaman</h2>
+            <p>Riwayat pengalaman akademik dan non-akademik</p>
+        </div>
+
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h4>Mahasiswa Sistem Informasi</h4>
+                <p>Universitas XYZ</p>
+                <span>2023 – Sekarang</span>
+            </div>
+            <div class="experience-card">
+                <h4>Anggota Organisasi Kampus</h4>
+                <p>Divisi Teknologi Informasi</p>
+                <span>2024</span>
+            </div>
+            <div class="experience-card">
+                <h4>Project Website Sederhana</h4>
+                <p>Tugas mata kuliah</p>
+                <span>2024</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Kontak</h2>
+            <p>Silakan hubungi saya melalui informasi berikut</p>
+        </div>
+
+        <div class="contact-box">
+            <p>Email: namakamu@email.com</p>
+            <p>Instagram: @namakamu</p>
+            <p>LinkedIn: linkedin.com/in/namakamu</p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Profil Pribadi | Nama Kamu</p>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
